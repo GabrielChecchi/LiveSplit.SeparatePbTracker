@@ -16,7 +16,7 @@ namespace LiveSplit.UI.Components
         {
             InitializeComponent();
 
-            PbComparisonName = "PB";
+            PbComparisonName = "Separate PB";
             CurrentState = state;
 
             CreateComparison();

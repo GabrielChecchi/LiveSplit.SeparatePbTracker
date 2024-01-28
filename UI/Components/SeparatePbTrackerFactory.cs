@@ -7,7 +7,7 @@ namespace LiveSplit.UI.Components
     {
         public string ComponentName => "Separate RT and IGT PB Tracker";
 
-        public string Description => "Keeps track of your RT PB and IGT PB separately, saving them in a new Comparison called 'PB'";
+        public string Description => "Keeps track of your RT PB and IGT PB separately, saving them in a new Comparison called 'Separate PB'";
 
         public ComponentCategory Category => ComponentCategory.Other;
 
