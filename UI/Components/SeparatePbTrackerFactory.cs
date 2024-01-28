@@ -15,7 +15,7 @@ namespace LiveSplit.UI.Components
 
         public string UpdateName => ComponentName;
 
-        public string UpdateURL => "";
+        public string UpdateURL => "https://raw.githubusercontent.com/GabrielChecchi/LiveSplit.SeparatePbTracker/master";
 
         public string XMLURL => UpdateURL + "Components/update.LiveSplit.SeparatePbTracker.xml";
 
