@@ -93,7 +93,7 @@ namespace LiveSplit.UI.Components
                 {
                     for (int i = 0; i < CurrentState.Run.Count(); i++)
                     {
-                        CurrentState.Run[i].Comparisons[Settings.PbComparisonName] = new Time(SavedCurrentRun[i].PersonalBestSplitTime[TimingMethod.RealTime], SavedCurrentRun[i].SplitTime[TimingMethod.GameTime]);
+                        CurrentState.Run[i].Comparisons[Settings.PbComparisonName] = new Time(CurrentState.Run[i].Comparisons[Settings.PbComparisonName][TimingMethod.RealTime], SavedCurrentRun[i].SplitTime[TimingMethod.GameTime]);
                     }
                 }
             }
@@ -113,7 +113,7 @@ namespace LiveSplit.UI.Components
                 {
                     for (int i = 0; i < CurrentState.Run.Count(); i++)
                     {
-                        CurrentState.Run[i].Comparisons[Settings.PbComparisonName] = new Time(SavedCurrentRun[i].SplitTime[TimingMethod.RealTime], SavedCurrentRun[i].PersonalBestSplitTime[TimingMethod.GameTime]);
+                        CurrentState.Run[i].Comparisons[Settings.PbComparisonName] = new Time(SavedCurrentRun[i].SplitTime[TimingMethod.RealTime], CurrentState.Run[i].Comparisons[Settings.PbComparisonName][TimingMethod.GameTime]);
                     }
                 }
             }
